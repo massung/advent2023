@@ -1,6 +1,4 @@
-$day = 4
-$file = 'real.txt'
-$lines = File.readlines("/Users/jeff/Projects/advent/day#{$day}/#{$file}")
+$lines = File.readlines("/Users/jeff/Projects/advent/day4/real.txt")
 
 class Card
 	def initialize line

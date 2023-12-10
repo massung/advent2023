@@ -1,6 +1,4 @@
-$day = 7
-$file = 'real.txt'
-$lines = File.readlines("/Users/jeff/Projects/advent/day#{$day}/#{$file}")
+$lines = File.readlines("/Users/jeff/Projects/advent/day7/real.txt")
 
 $all_cards = "..23456789TJQKA"
 

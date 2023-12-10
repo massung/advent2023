@@ -1,18 +1,16 @@
-$day = 2
-$file = 'real.txt'
-$lines = File.readlines("/Users/jeff/Projects/advent/day#{$day}/#{$file}")
+$lines = File.readlines("/Users/jeff/Projects/advent/day2/real.txt")
 
 class Game
 	def initialize(line)
 		m = line.match(/Game (\d+): (.*)/)
-		@id = m[1].to_i
-		@draws = m[2].split(';').map do |draw|
+		@id = $1.to_i
+		@draws = $2.split(';').map do |draw|
 			blocks = {'red' => 0, 'blue' => 0, 'green' => 0}
 		
 			# figure out how many of each color
 			draw.split(',').each do |s|
 				m = s.match(/(\d+) (red|green|blue)/)
-				blocks[m[2]] = m[1].to_i
+				blocks[$2] = $1.to_i
 			end
 		
 			blocks

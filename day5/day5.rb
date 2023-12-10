@@ -1,6 +1,4 @@
-$day = 5
-$file = 'real.txt'
-$lines = File.readlines("/Users/jeff/Projects/advent/day#{$day}/#{$file}")
+$lines = File.readlines("/Users/jeff/Projects/advent/day5/real.txt")
 
 class Map
 	def initialize(lines)

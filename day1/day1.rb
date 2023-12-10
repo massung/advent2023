@@ -1,6 +1,4 @@
-$day = 1
-$file = 'real.txt'
-$lines = File.readlines("/Users/jeff/Projects/advent/day#{$day}/#{$file}")
+$lines = File.readlines("/Users/jeff/Projects/advent/day1/real.txt")
 $words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
 
 def part1(line)

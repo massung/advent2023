@@ -1,6 +1,4 @@
-$day = 6
-$file = 'real.txt'
-$lines = File.readlines("/Users/jeff/Projects/advent/day#{$day}/#{$file}")
+$lines = File.readlines("/Users/jeff/Projects/advent/day6/real.txt")
 
 times = $lines[0].scan(/\d+/).map &:to_i
 distances = $lines[1].scan(/\d+/).map &:to_i

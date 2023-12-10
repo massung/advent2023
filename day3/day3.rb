@@ -1,6 +1,4 @@
-$day = 3
-$file = 'real.txt'
-$lines = File.readlines("/Users/jeff/Projects/advent/day#{$day}/#{$file}")
+$lines = File.readlines("/Users/jeff/Projects/advent/day3/real.txt")
 
 class Schematic
 	def initialize(lines)
